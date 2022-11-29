@@ -1,0 +1,74 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+  padding: 50px;
+  font-family: "Work Sans", system-ui, sans-serif;
+}
+.card {
+  border: 1px solid black;
+  padding: 15px;
+}
+.un-line {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.btn-div {
+  text-align: center;
+}
+.btn {
+  padding: 10px 25px;
+  font-weight: bold;
+  background-color: aqua;
+  margin: 15px;
+  border-radius: 10px;
+  border: none;
+  
+}
+.modal {
+  display: block;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 100px;
+}
+.modal-content {
+  background-color: white;
+  margin: auto;
+  padding: 20px 50px;
+  width: 40%;
+  padding-top: 50px;
+  display: flex;
+  gap: 30px;
+}
+.close {
+  background-color: black;
+  color: white;
+  font-weight: bolder;
+  font-size: 26px;
+  text-align: right;
+  padding: 5px;
+  border-radius: 5px;
+  position: absolute;
+  top: 15%;
+  right: 27%;
+}
+.card-1 {
+  box-shadow: rgba(158, 206, 218, 0.5) -30px 30px;
+  border: 3px solid #59c1bd;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media screen and(min-width:0px) and( max-width:540px) {
+  .main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
